@@ -1,1 +1,51 @@
 #main {padding: 1.5em 0 0;} 
+@media all {
+
+    #main {
+         padding-top: 20px;
+    }
+    
+    .ym-hlist li.current-menu-item {
+        background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+        border-radius: 0.2em 0.2em 0.2em 0.2em;
+    }
+    
+    .ym-hlist li.current-menu-item a {
+        color: white;
+    }
+    
+    form.ym-searchform input#searchsubmit {
+        background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+        border: 1px solid transparent;
+        border-radius: 0.2em 0.2em 0.2em 0.2em;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1em;
+        line-height: 1.3571em;
+        padding: 0.25em;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        }
+    
+    form.ym-searchform input#s {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+        line-height: 1em;
+        outline: medium none;
+        padding: 0.25em;
+        width: 12em;
+        }    
+    
+    form.ym-searchform .screen-reader-text {
+        display: none;
+        }    
+    
+    .ym-button {
+        margin: 1.5em 0 0 0;
+        }    
+    
+    .ym-cbox li    {
+        list-style: none;
+        }    
+    }

@@ -61,7 +61,8 @@
 <div class="ym-wrapper">
     <div class="ym-wbox">    
         <header>        
-        <h1><?php bloginfo('name'); ?></h1><br /><span><?php bloginfo('description'); ?></span>     
+        <a href="<?php bloginfo('url'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
+        <br /><span><?php bloginfo('description'); ?></span>     
         </header>        
         <!-- START Navigation -->
         <nav id="nav">
