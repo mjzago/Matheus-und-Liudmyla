@@ -2,11 +2,14 @@
 </div> <!-- ENDE ym-column linearize-level-1 -->              
         </div> <!-- ENDE main -->      
         <footer>
-            <p>© MeinTemplate 2022 – Layout based on <a href="http://www.yaml.de">YAML</a></p>
+        <div id=""><a href="#top" title="Zum Seitenanfang springen">nach oben</a></div>
+<div id="">&copy; MeinTemplate <?php echo date("Y"); ?> &ndash; Layout based on <a href="http://www.yaml.de">YAML</a></div>
+<!--<?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds -->
         </footer>        
     </div>  <!-- ENDE ym-wbox -->
 </div> <!-- ENDE ym-wrapper -->
 <!-- full skip link functionality in webkit browsers -->
 <link href="<?php bloginfo('template_url'); ?>/yaml/core/iehacks.css" rel="stylesheet" type="text/css">
+<?php wp_footer(); ?>
 </body>
 </html>
