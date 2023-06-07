@@ -8,6 +8,7 @@
         <span><?php echo $wp_query->found_posts; ?> Treffer f&uuml;r: </span><b><?php the_search_query(); ?></b>
     </p>
     <?php while (have_posts()) : the_post(); ?>
+        <section class="info box">
         <?php
             $titel = get_the_title();
             $auszug = get_the_excerpt();
@@ -28,11 +29,31 @@
             <?php echo $auszug; ?>
             <div>Geschrieben von <b><?php echo $autor; ?></b> am <?php the_time('j. F Y'); ?> um <?php the_time('G:i'); ?> Uhr</div>
         </div>
+        </section>
     <?php endwhile; ?>
+    
     <?php else : ?>
         <h2>
             Leider nichts gefunden!
         </h2>
 <?php endif; ?>
+    
+<p>
+<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } else { ?>
+     <p> 
+         <?php
+            global $wp_query; 
+            $big = 999999999; // need an unlikely integer 
+            echo paginate_links( array(
+                'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                'format' => '?paged=%#%',
+                'current' => max( 1, get_query_var('paged') ),
+                'total' => $wp_query->max_num_pages
+            ) );
+         ?>   
+     </p>
+ <?php } ?>
+</p>
+
 <?php get_footer(); ?> 
 

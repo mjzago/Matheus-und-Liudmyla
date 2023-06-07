@@ -68,9 +68,9 @@
         <nav id="nav">
             <div class="ym-hlist">
             <?php wp_nav_menu( array('menu' => 'Main Navigation Menu', 'depth' => 1)); ?>
-                <form class="ym-searchform">
+               
                 <?php get_search_form(); ?>
-                </form>                 
+                               
             </div>
         </nav>
         <!-- ENDE Navigation --> 
