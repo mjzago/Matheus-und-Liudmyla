@@ -36,15 +36,29 @@
 								</div>
 							
 							  <?php endwhile; ?>
-								<p>                                    
-									<?php previous_post_link('&laquo; %link') ?>
-									<?php next_post_link('<span style="float:right">%link &raquo;</span>') ?>
-								</p>
+								
 							
 						   <?php else : ?>
 							<h2>Nichts gefunden</h2>
 							<p>Sorry, aber du suchst gerade nach etwas, was hier nicht ist.</p>
 						   <?php endif; ?>
+						
+						<p>
+					<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } else { ?>
+					 <p> 
+						 <?php
+							global $wp_query; 
+							$big = 999999999; // need an unlikely integer 
+							echo paginate_links( array(
+								'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+								'format' => '?paged=%#%',
+								'current' => max( 1, get_query_var('paged') ),
+								'total' => $wp_query->max_num_pages
+							) );
+						 ?>   
+					 </p>
+				 <?php } ?>
+				</p>
 							
                                                 
                     </div> <!-- ENDE ym-cbox -->

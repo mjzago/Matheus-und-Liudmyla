@@ -1,10 +1,13 @@
 <?php get_header(); ?>
-  <div id="main"> <!-- in footer.php: ENDE main -->
-    <div class="ym-column linearize-level-1"> <!-- in footer.php: ENDE ym-column linearize-level-1 -->
-      <div class="ym-col1">
-        <div class="ym-cbox"> <!-- bis hier identisch zur index.php -->         
-		  
-            <?php if (have_posts()) : ?>
+
+<!-- ab hier: index.php -->
+        <div id="main">
+            <div class="ym-column linearize-level-1">
+                <div class="ym-col1">
+                    <div class="ym-cbox">                    
+                        
+							
+							<?php if (have_posts()) : ?>
             <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
             <?php /* If this is a category archive */ if (is_category()) { ?>
             <h3><?php printf(__('Archiv für die Kategorie ‘%s’', ''), single_cat_title('', false)); ?></h3>
@@ -49,8 +52,28 @@
                 <h2>Nicht gefunden!</h2>
                 <p>Sorry, aber du suchst gerade nach etwas, was hier nicht ist.</p>
               <?php endif; ?>
-		  
-       </div> <!-- ENDE ym-cbox --> <!-- ab hier wieder identisch zur index.php -->
-    </div> <!-- ENDE ym-col1 -->
-<?php get_sidebar();?>    
+						
+						<p>
+					<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } else { ?>
+					 <p> 
+						 <?php
+							global $wp_query; 
+							$big = 999999999; // need an unlikely integer 
+							echo paginate_links( array(
+								'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+								'format' => '?paged=%#%',
+								'current' => max( 1, get_query_var('paged') ),
+								'total' => $wp_query->max_num_pages
+							) );
+						 ?>   
+					 </p>
+				 <?php } ?>
+				</p>
+							
+                                                
+                    </div> <!-- ENDE ym-cbox -->
+                </div> <!-- ENDE ym-col1 --> 
+<!-- bis hier: index.php -->
+				
+<?php get_sidebar();?>
 <?php get_footer(); ?>
