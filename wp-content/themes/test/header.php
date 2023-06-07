@@ -37,14 +37,15 @@
     <!-- Mobile viewport optimisation -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- (en) Add your meta data here -->
-    <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- Stats -->
-<!-- <meta name="siteinfo" content="<?php //bloginfo('url'); ?>/robots.txt" /> Robot-Datei -->
-<meta name="robots" content="index, follow" /> <!-- Alles wird indexiert -->
-<!-- <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>"> -->
-<!-- <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"> -->
-<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?> <!-- Javascript Comment Functionality -->
-<?php wp_head(); ?>
-    <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css">
+    <!-- (de) Fuegen Sie hier ihre Meta-Daten ein -->
+	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- Stats -->
+	<!-- <meta name="siteinfo" content="<?php //bloginfo('url'); ?>/robots.txt" /> Robot-Datei -->
+	<meta name="robots" content="index, follow" /> <!-- Alles wird indexiert -->
+	<!-- <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>"> -->
+	<!-- <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"> -->
+	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?> <!-- Javascript Comment Functionality -->
+	<?php wp_head(); ?>
+   	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css">
     <!--[if lte IE 7]>
     <link href="<?php bloginfo('template_url'); ?>/yaml/core/iehacks.css" rel="stylesheet" type="text/css">
     <![endif]-->
@@ -53,7 +54,7 @@
     <![endif]-->
 </head>
 <body>
-<div id="top"></div> <!-- nach oben-Button -->
+	<div id="top"></div> <!-- nach oben-Button -->
 <ul class="ym-skiplinks">
     <li><a class="ym-skip" href="#nav">Skip to navigation (Press Enter)</a></li>
     <li><a class="ym-skip" href="#main">Skip to main content (Press Enter)</a></li>
@@ -61,16 +62,16 @@
 <div class="ym-wrapper">
     <div class="ym-wbox">    
         <header>        
-        <a href="<?php bloginfo('url'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
-        <br /><span><?php bloginfo('description'); ?></span>     
+			<a href="<?php bloginfo('url'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
+			
+			
+			<br /><span><?php bloginfo('description'); ?></span>         
         </header>        
         <!-- START Navigation -->
         <nav id="nav">
             <div class="ym-hlist">
-            <?php wp_nav_menu( array('menu' => 'Main Navigation Menu', 'depth' => 1)); ?>
-               
-                <?php get_search_form(); ?>
-                               
+                <?php wp_nav_menu( array('menu' => 'Main Navigation Menu', 'depth' => 1)); ?>          
+                <?php get_search_form(); ?>                       
             </div>
         </nav>
         <!-- ENDE Navigation --> 

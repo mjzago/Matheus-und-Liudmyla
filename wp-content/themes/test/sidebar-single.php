@@ -1,6 +1,7 @@
 <div class="ym-col3">
    <div class="ym-cbox">
-      <h2>Beiträge</h2>
+      
+	   <h2>Beiträge</h2>
    nach Monaten:
    <ul>
       <?php wp_get_archives('type=monthly'); ?>
@@ -12,6 +13,7 @@
    nach Tagen:	   
    <ul>
       <?php wp_get_archives('type=daily'); ?>
-   </ul>                       
+   </ul>
+	   
    </div>
 </div>

@@ -1,9 +1,8 @@
-
 /*
 Theme Name: test
-Theme URI: http://www.imberuf.de/r78/demo/test
-Author: Matheus Jones Zago
-Author URI: https://github.com/mjzago/intoCODE
+Theme URI: http://www.imberuf.de/r00/demo/
+Author: Andre Kreutzmann
+Author URI: http://www.morain.de
 Description: Wir machen aus YAML4 ein WordPress-Theme
 Version: 1.0
 License: GNU General Public License
@@ -13,6 +12,7 @@ Text Domain: test
 Tested up to: 6.0
 Requires PHP: 7.0
 */
+
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  *
@@ -39,5 +39,6 @@ Requires PHP: 7.0
 
 /* import print layout | Druck-Layout einbinden */
 @import url(yaml/print/print.css);
-@import url(css/corrections.css);
+
 /* Korrekturen nach Bedarf */
+@import url(css/corrections.css);
