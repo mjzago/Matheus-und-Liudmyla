@@ -46,5 +46,5 @@
             </div> <!-- ENDE ym-cbox -->
         </div> <!-- ENDE ym-col1 -->
         <!-- bis hier: index.php -->
-              <?php get_footer(); ?>
-              
+        <?php get_template_part('sidebar-single'); ?>  
+        <?php get_footer(); ?>
