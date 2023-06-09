@@ -39,10 +39,11 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico">
+    <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/images/apple-touch-icon-114x114.png">
+
 
 </head>
 <body class="wrap">
@@ -68,16 +69,16 @@
     <a href="three-column.html">Three Column</a>
     </li>
     <li id="menu-item-3">
-    <a href="sidebar-right.html">Sidebar Right</a>
+    <a href="<?php echo get_permalink( $sidebar_right_page_id ); ?>">Sidebar Right</a>
     </li>
     <li id="menu-item-4">
-    <a href="sidebar-left.html">Sidebar Left</a>
+    <a href="<?php echo get_permalink( $sidebar_left_page_id ); ?>">Sidebar Left</a>
     </li>
     <li id="menu-item-5">
-    <a href="full-width.html">Full Width</a>
+    <a href="<?php echo get_permalink( $full_width_page_id ); ?>">Full Width</a>
     </li>
     <li id="menu-item-6">
-    <a href="contact.html">Contact</a>
+    <a href="<?php echo get_permalink( $contact_page_id ); ?>">Contact</a>
     </li>
     </ul>
     </nav>

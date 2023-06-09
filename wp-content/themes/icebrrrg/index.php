@@ -7,7 +7,7 @@
     <div class="flexslider">
 <ul class="slides">
 <li>
-  <a href="#"><img src="images/penguin1.jpeg" alt="Random Penguin Photo" /></a>
+<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/penguin1.jpeg" alt="Random Penguin Photo" /></a>
   <div class="flex-caption">
             <h5><a href="#">Fully Responsive</a></h5>
     
@@ -15,7 +15,7 @@
 </div>
 </li>
 <li>
-  <a href="#"><img src="images/penguin2.jpeg" alt="Random Penguin Photo" /></a>
+<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/penguin2.jpeg" alt="Random Penguin Photo" /></a>
   <div class="flex-caption" style="display:none;">
             <h5><a href="#">Multiple layouts</a></h5>
     
@@ -23,7 +23,7 @@
 </div>
 </li>
 <li>
-  <a href="#"><img src="images/penguin3.jpeg" alt="Random Penguin Photo" /></a>
+<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/penguin3.jpeg" alt="Random Penguin Photo" /></a>
   <div class="flex-caption" style="display:none;">
             <h5><a href="#">Contact form</a></h5>
     
@@ -70,8 +70,8 @@
     
     <article id="photo-item-1" class="feature-column one-third column">
     <div class="featured-image img-wrapper">
-    <a href="images/iceberg1.jpg" rel="prettyPhoto" class="img-link" title="Photo Item 1">
-    <img src="images/iceberg1.jpg" class="scale-with-grid" alt="Random Iceberg Photo">
+    <a href="<?php echo get_stylesheet_directory_uri(); ?>/images/iceberg1.jpg" rel="prettyPhoto" class="img-link" title="Photo Item 1">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/iceberg1.jpg" class="scale-with-grid" alt="Random Iceberg Photo">
     <div class="overlay zoom"></div>
     </a>
     </div>
@@ -83,8 +83,8 @@
     
     <article id="photo-item-2" class="feature-column one-third column">
     <div class="featured-image img-wrapper">
-    <a href="images/iceberg2.jpg" rel="prettyPhoto" class="img-link" title="Photo Item 1">
-    <img src="images/iceberg2.jpg" class="scale-with-grid" alt="Random Iceberg Photo">
+    <a href="<?php echo get_stylesheet_directory_uri(); ?>/images/iceberg2.jpg" rel="prettyPhoto" class="img-link" title="Photo Item 1">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/iceberg2.jpg" class="scale-with-grid" alt="Random Iceberg Photo">
     <div class="overlay zoom"></div>
     </a>
     </div>
@@ -94,8 +94,8 @@
     
     <article id="photo-item-3" class="feature-column one-third column">
     <div class="featured-image img-wrapper">
-    <a href="images/iceberg3.jpg" rel="prettyPhoto" class="img-link" title="Photo Item 1">
-    <img src="images/iceberg3.jpg" class="scale-with-grid" alt="Random Iceberg Photo">
+    <a href="<?php echo get_stylesheet_directory_uri(); ?>/images/iceberg3.jpg" rel="prettyPhoto" class="img-link" title="Photo Item 1">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/iceberg3.jpg" class="scale-with-grid" alt="Random Iceberg Photo">
     <div class="overlay zoom"></div>
     </a>
     </div>
@@ -162,7 +162,7 @@
  
  <div class="two columns alpha">
  <div class="featured-image img-wrapper">
- <img src="images/iceberg2.jpg" class="scale-with-grid thumb-link" alt="Another damn iceberg!">
+ <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/iceberg2.jpg" class="scale-with-grid thumb-link" alt="Another damn iceberg!">
  </div>
  </div>
  
