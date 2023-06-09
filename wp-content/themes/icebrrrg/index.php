@@ -1,4 +1,6 @@
 <?php get_header();?>
+
+
 <div class="container">
     
     <div class="sixteen columns">
@@ -116,7 +118,7 @@
  
  <div class="two columns alpha">
  <div class="featured-image img-wrapper">
- <img src="images/iceberg1.jpg" class="scale-with-grid thumb-link" alt="Another damn iceberg!">
+ <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/iceberg1.jpg" class="scale-with-grid thumb-link" alt="Another damn iceberg!">
  </div>
  </div>
  
@@ -186,11 +188,10 @@
  Icebrrrg is so pretty and easy to use it makes you feel like you can do anything.  Even fly.  Which for me, is huge!
  <cite>A Daredevil Penguin</cite>
  </blockquote>
- 
  </aside>
- 
  </section>
-
 </div>
 <?php get_sidebar();?>
 <?php get_footer(); ?>
+
+
