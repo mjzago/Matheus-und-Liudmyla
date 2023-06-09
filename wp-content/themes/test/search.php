@@ -30,9 +30,7 @@
 							<div>Geschrieben von <b><?php echo $autor; ?></b> am <?php the_time('j. F Y'); ?> um <?php the_time('G:i'); ?> Uhr</div>
 						</div>
 						</section>
-					<?php endwhile; ?>
-						
-						
+					<?php endwhile; ?>					
 					<?php else : ?>
 						<h2>
 							Leider nichts gefunden!

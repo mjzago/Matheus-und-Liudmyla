@@ -36,7 +36,10 @@
 								</div>
 							
 							  <?php endwhile; ?>
-								
+								<p>                                    
+									<?php previous_post_link('&laquo; %link') ?>
+									<?php next_post_link('<span style="float:right">%link &raquo;</span>') ?>
+								</p>
 							
 						   <?php else : ?>
 							<h2>Nichts gefunden</h2>

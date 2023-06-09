@@ -70,9 +70,18 @@
         <!-- START Navigation -->
         <nav id="nav">
             <div class="ym-hlist">
-                <?php wp_nav_menu( array('menu' => 'Main Navigation Menu', 'depth' => 1)); ?>          
+				<div id="access">
+    				<div class="menu-header">
+                		<?php wp_nav_menu( array('menu' => 'Main Navigation Menu', 'depth' => 4, 'theme_location' => 'Main Navigation Menu' )); ?> 
+					</div>
+				</div>
+				
                 <?php get_search_form(); ?>                       
             </div>
         </nav>
+		
+		<p>
+   <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?>
+</p>
         <!-- ENDE Navigation --> 
 <!-- bis hier: header.php -->
