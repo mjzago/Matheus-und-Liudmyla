@@ -24,27 +24,27 @@
     <div class="flexslider">
 <ul class="slides">
 <li>
-<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/penguin1.jpeg" alt="Random Penguin Photo" /></a>
+<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nord.jpeg" alt="Nordsee trains" /></a>
   <div class="flex-caption">
-            <h5><a href="#">Fully Responsive</a></h5>
+            <h5><a href="#">DISCOVER THE NORDSEE WITH ONLY 49€ </a></h5>
     
-            <p>Icebrrrg adapts to any screen size to optimize your user's experience.</p>		
+            <p>From Beaches to Wildlife Reserves: Unforgettable Encounters in Nordsee's Natural Paradises.</p>		
 </div>
 </li>
 <li>
-<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/penguin2.jpeg" alt="Random Penguin Photo" /></a>
+<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/montains.jpeg" alt="Montains" /></a>
   <div class="flex-caption" style="display:none;">
-            <h5><a href="#">Multiple layouts</a></h5>
+            <h5><a href="#">Nature's Majesty Revealed: Unraveling the Secrets of Germany's Majestic Mountain Scenery</a></h5>
     
-            <p>Easily create multiple different layouts with the simple grid setup - one column, two column, three column, more.</p>		
+            <p>Immerse Yourself in a Tapestry of Dramatic Landscapes and Alpine Wonders with Germany 49€ Ticket</p>		
 </div>
 </li>
 <li>
-<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/penguin3.jpeg" alt="Random Penguin Photo" /></a>
+<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/frankfurt.jpeg" alt="Frankfurt Am Main" /></a>
   <div class="flex-caption" style="display:none;">
-            <h5><a href="#">Contact form</a></h5>
+            <h5><a href="#">Discover Frankfurt Am Main and other big cities</a></h5>
     
-            <p>Not a developer? No problem. Icebrrrg comes complete with a PHP contact form ready to rock.</p>		
+            <p>Discover the Best of Germany: Embark on a Journey to Frankfurt Am Main and More with the Deutschland Ticket.</p>		
 </div>
 </li>
 </ul>
@@ -88,8 +88,8 @@
     
     <article id="photo-item-1" class="feature-column one-third column">
         <div class="featured-image img-wrapper">
-            <a href="<?php echo get_stylesheet_directory_uri(); ?>/images/destinations.jpg" rel="prettyPhoto" class="img-link" title="Photo Item 1">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/destinations.jpg" class="scale-with-grid" alt="Random Iceberg Photo">
+            <a href="<?php echo get_stylesheet_directory_uri(); ?>/images/maps1.jpg" rel="prettyPhoto" class="img-link" title="Maps">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/maps1.jpg" class="scale-with-grid" alt="Maps">
                 <div class="overlay zoom"></div>
             </a>
         </div>
@@ -111,8 +111,8 @@
     
     <article id="photo-item-3" class="feature-column one-third column">
         <div class="featured-image img-wrapper">
-            <a href="<?php echo get_stylesheet_directory_uri(); ?>/images/destinations.jpg" rel="prettyPhoto" class="img-link" title="Photo Item 1">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/destinations.jpg" class="scale-with-grid" alt="Random Iceberg Photo">
+            <a href="<?php echo get_stylesheet_directory_uri(); ?>/images/trains.jpg" rel="prettyPhoto" class="img-link" title="Photo Item 1">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/trains.jpg" class="scale-with-grid" alt="Train times">
                 <div class="overlay zoom"></div>
             </a>
         </div>
