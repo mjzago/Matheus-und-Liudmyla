@@ -476,3 +476,42 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 
 acronym { border-bottom:1px dotted #ccc; }
 
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-item.active {
+  background-color: #f9f9f9;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+.accordion-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  background-color: #f9f9f9;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion-button:hover {
+  background-color: #eaeaea;
+}
+
+
