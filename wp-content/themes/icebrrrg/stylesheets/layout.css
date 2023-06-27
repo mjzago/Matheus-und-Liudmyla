@@ -29,12 +29,67 @@ h1 a { text-indent: -9999px; }
 /* #Navigation
 ================================================== */
 
-#main-nav { float: right; }
-#main-nav ul, #main-nav li { list-style: none; padding: 0; margin: 0; display: inline; } 
-#main-nav ul li { float: left; position: relative; }
-#main-nav ul li a { display: inline-block; padding: 48px 10px 34px 10px; margin: 0 5px; text-decoration: none; font-size: 12px; border-bottom: 3px solid transparent; }
-#main-nav ul li:hover { border-bottom: 3px solid #2c88c9 !important; }
-.current { font-weight: bold !important; color: #444 !important; border-bottom: 3px solid #2c88c9 !important; }
+#main-nav {
+  float: right;
+}
+
+#main-nav ul,
+#main-nav li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+#main-nav ul li {
+  float: left;
+  position: relative;
+}
+
+#main-nav ul li a {
+  display: block;
+  padding: 48px 10px 34px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 12px;
+  border-bottom: 3px solid transparent;
+}
+
+#main-nav ul li:hover {
+  border-bottom: 3px solid #2c88c9 !important;
+}
+
+/* Add styles for the submenu */
+#main-nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0;
+}
+
+#main-nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 5px; /* Adjust the margin to reduce the distance */
+}
+
+#main-nav ul li ul li {
+  float: none;
+}
+
+#main-nav ul li ul li a {
+  padding: 10px;
+}
+
+.current {
+  font-weight: bold !important;
+  color: #444 !important;
+  border-bottom: 3px solid #2c88c9 !important;
+}
+
 
 
 /* #Site Styles
@@ -475,43 +530,4 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 #contact #success_page h1 { background: url('../assets/success.gif') left no-repeat; padding-left:22px; }
 
 acronym { border-bottom:1px dotted #ccc; }
-
-.accordion-item {
-  border-bottom: 1px solid #ddd;
-  padding: 10px;
-  cursor: pointer;
-  position: relative;
-}
-
-.accordion-item.active {
-  background-color: #f9f9f9;
-}
-
-.accordion-content {
-  display: none;
-  padding: 10px;
-  background-color: #fff;
-}
-
-.accordion-item.active .accordion-content {
-  display: block;
-}
-
-.accordion-button {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  padding: 5px 10px;
-  background-color: #f9f9f9;
-  border: none;
-  color: #333;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.accordion-button:hover {
-  background-color: #eaeaea;
-}
-
 

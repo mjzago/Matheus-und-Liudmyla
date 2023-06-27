@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <!-- ab hier: index.php -->
+<div id="ww_8bb1e6f9261e9" v='1.3' loc='id' a='{"t":"ticker","lang":"de","sl_lpl":1,"ids":["wl1754"],"font":"Times","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#0288D1","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#FFFFFF","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://wetterlang.de/wetter_21_tage/" id="ww_8bb1e6f9261e9_u" target="_blank">Wettervorhersage 21 tage</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_8bb1e6f9261e9"></script>
 <div id="main">
     <div>
         <?php if (have_posts()) : ?>
@@ -273,8 +274,8 @@
  
  <?php
 $args = array(
-    'posts_per_page' => 2, // Display the latest two posts
-    'post_status' => 'publish', // Only retrieve published posts
+    'posts_per_page' => 2, // Exibir as duas postagens mais recentes
+    'post_status' => 'publish', // Apenas recuperar postagens publicadas
 );
 
 $latest_posts = new WP_Query($args);
@@ -292,10 +293,10 @@ if ($latest_posts->have_posts()) {
 
             <div class="six columns omega">
                 <header>
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3> <!-- Adicionando a função the_title() -->
                     <div class="meta">
-                        <span class="post-date">by <strong><?php the_author(); ?></strong> on <strong><?php the_date('F j, Y'); ?></strong></span>
-                        <span class="post-category">Category: <?php the_category(', '); ?></span>
+                        <span class="post-date">por <strong><?php the_author(); ?></strong> em <strong><?php the_date('F j, Y'); ?></strong></span>
+                        <span class="post-category">Categoria: <?php the_category(', '); ?></span>
                     </div>
                 </header>
                 <p><?php the_excerpt(); ?></p>
@@ -305,9 +306,10 @@ if ($latest_posts->have_posts()) {
     }
     wp_reset_postdata();
 } else {
-    echo 'No posts found.';
+    echo 'Nenhuma postagem encontrada.';
 }
 ?>
+
 
  
  </aside>

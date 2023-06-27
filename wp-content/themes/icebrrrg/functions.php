@@ -117,4 +117,22 @@ function nav_breadcrumb() {
  
  } 
 }
+function remove_post_titles($title, $id = null) {
+	if (is_single($id) || is_page($id)) {
+	  return '';
+	}
+	return $title;
+  }
+  add_filter('the_title', 'remove_post_titles', 10, 2);
+  
+  // Preserve menu titles
+  function preserve_menu_titles($title, $item) {
+	if ($item->type == 'post_type') {
+	  $post = get_post($item->object_id);
+	  $title = !empty($post->post_title) ? $post->post_title : $title;
+	}
+	return $title;
+  }
+  add_filter('nav_menu_item_title', 'preserve_menu_titles', 10, 2);
+  
 ?>

@@ -53,24 +53,26 @@
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<header id="header" class="site-header" role="banner">
-    <div id="header-inner" class="container sixteen columns over">
-        <hgroup class="one-third column alpha">
-            <h1 id="site-title" class="site-title">
-                <a href="<?php echo home_url(); ?>" id="logo">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icebrrrg-logo.png" alt="Icebrrrg logo" height="63" width="157" />
-                </a>
-            </h1>
-        </hgroup>
-        <nav id="main-nav" class="two thirds column omega">
-            <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'menu-main',
-                    'container' => 'ul',
-                    'menu_id' => 'main-nav-menu',
-                    'menu_class' => 'nav-menu',
-                ));
-            ?>
-        </nav>
-    </div>
+	<header id="header" class="site-header">
+  <div id="header-inner" class="container sixteen columns over">
+    <hgroup class="one-third column alpha">
+      <h1 id="site-title" class="site-title">
+        <a href="<?php echo home_url(); ?>" id="logo">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icebrrrg-logo.png" alt="Icebrrrg logo" height="63" width="157" />
+        </a>
+      </h1>
+    </hgroup>
+    <nav id="main-nav" class="two-thirds column omega">
+      <?php
+        wp_nav_menu(array(
+            'theme_location' => 'menu-main',
+            'container' => 'ul',
+            'menu_class' => 'main-nav',
+            'fallback_cb' => false // Disable fallback menu
+          ));
+      ?>
+    </nav>
+  </div>
 </header>
+
+
