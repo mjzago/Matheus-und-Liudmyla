@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 <!-- ab hier: index.php -->
-<div id="main">
+<div id="main" style="padding: 50px;">
     <div class="eleven columns"> <!-- Alterado para eleven columns -->
         <div class="ym-column linearize-level-1">
             <div class="ym-col1">
-                <div class="ym-cbox">                    
+                <div class="ym-cbox">
 
                     <?php if (have_posts()) : ?>
                         <?php while (have_posts()) : ?>
@@ -13,7 +13,7 @@
 
                             <div id="post-<?php the_ID(); ?>" <?php post_class('eleven columns'); ?>> <!-- Alterado para eleven columns -->
                                 <div class="box info"> <!-- Removido eleven columns -->
-                                    <p> 
+                                    <p>
                                         Geschrieben von <b><?php the_author(); ?></b> am <?php the_time('j. F Y'); ?> um <?php the_time('G:i'); ?> Uhr,
                                         abgelegt unter <?php the_category(' | '); ?>
                                     </p>
@@ -23,18 +23,18 @@
                                         <?php the_title('<h2>', '</h2>', true); ?></a>
                                     <div>
                                         <?php comments_popup_link('Kein Kommentar', '1 Kommentar', '% Kommentare', '', 'Kommentare sind abgeschaltet.'); ?>
-                                        <?php edit_post_link('Bearbeiten',' | ',''); ?>                                                    
+                                        <?php edit_post_link('Bearbeiten', ' | ', ''); ?>
                                     </div>
 
                                     <?php the_content('<br /><span class="ym-button ym-next">Weiterlesen</span>'); ?>
-                                    <div> 
+                                    <div>
                                         <?php comments_template(); ?>
                                     </div>
                                 </div> <!-- ENDE box info -->
                             </div>
 
                         <?php endwhile; ?>
-                        <p>                                    
+                        <p>
                             <?php previous_post_link('&laquo; %link') ?>
                             <?php next_post_link('<span style="float:right">%link &raquo;</span>') ?>
                         </p>
@@ -46,7 +46,7 @@
 
 
                 </div> <!-- ENDE ym-cbox -->
-            </div> <!-- ENDE ym-col1 --> 
+            </div> <!-- ENDE ym-col1 -->
         </div>
     </div> <!-- ENDE eleven columns -->
 

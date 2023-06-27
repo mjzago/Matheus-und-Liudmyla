@@ -134,5 +134,3 @@ function remove_post_titles($title, $id = null) {
 	return $title;
   }
   add_filter('nav_menu_item_title', 'preserve_menu_titles', 10, 2);
-  
-?>
