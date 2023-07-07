@@ -11,11 +11,11 @@
     </div>
     <div class="footer-columns one-third column">
       <h2><i class="icon-book icon-large"></i> Footer Navigation Menu</h2>
-      <?php wp_nav_menu( array('menu' => 'Footer Navigation Menu', 'theme_location' => 'Footer Navigation Menu' )); ?>
-            <div id=""><a href="#top" title="Zum Seitenanfang springen">nach oben</a></div>
-			<div id="">&copy; MeinTemplate <?php echo date("Y"); ?> &ndash; Layout based on <a href="http://www.yaml.de">YAML</a></div>
-			<!--<?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds -->
-</div>
+      <?php wp_nav_menu(array('menu' => 'Footer Navigation Menu', 'theme_location' => 'Footer Navigation Menu')); ?>
+      <div id=""><a href="#top" title="Zum Seitenanfang springen">nach oben</a></div>
+      <div id="">&copy; Hochschule Hannover <?php echo date("Y"); ?> &ndash; intoCODE <a href="https://intocode.de/">IT-Experte Data Science / Web Technology</a></div>
+      <!--<?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds -->
+    </div>
     <div class="footer-columns one-third column">
       <h2><i class="icon-user icon-large"></i> About Us</h2>
       <p>This is where you tell the world how awesome you are. Us? We're Open Designs, a community of web designers offering free templates and resources to people like you to use on your own websites. We love design, code and tinkering. What do you love?</p>
@@ -27,12 +27,8 @@
         <a href="http://www.opendesigns.org/design/icebrrrg/">Icebrrg Website Template</a> &copy; 2012
       </div>
       <div class="eight columns far-edge">
-        Design by <a href="http://www.opendesigns.org">OD</a>
+        Converted to Wordpress by <a href="https://github.com/mjzago/Matheus-und-Liudmyla">Matheus Zago and Liudmyla Parkhomchuk </a>
       </div>
     </div>
   </div>
 </footer>
-
-
-
-

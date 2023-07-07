@@ -22,7 +22,7 @@
 /* #Header
 ================================================== */
 
-#header { border-bottom: 1px solid #E3E3E8; margin-bottom: 30px; }
+#header { border-bottom: 1px solid #E3E3E8; margin-bottom: 0px; }
 h1 a { text-indent: -9999px; }
 #site-title { padding-top: 20px; }
 
@@ -31,6 +31,7 @@ h1 a { text-indent: -9999px; }
 
 #main-nav {
   float: right;
+  margin-top: -100px;
 }
 
 #main-nav ul,
@@ -47,9 +48,9 @@ h1 a { text-indent: -9999px; }
 }
 
 #main-nav ul li a {
-  display: block;
-  padding: 48px 10px 34px 10px;
-  margin: 0 5px;
+  display: flex;
+  padding: 48px 10px 10px 10px;
+  margin: 0 0px;
   text-decoration: none;
   font-size: 12px;
   border-bottom: 3px solid transparent;
@@ -61,11 +62,12 @@ h1 a { text-indent: -9999px; }
 
 /* Add styles for the submenu */
 #main-nav ul li:hover ul {
-  display: block;
+  display: flex;
   position: absolute;
   top: 100%;
   left: 0;
   margin-top: 0;
+ 
 }
 
 #main-nav ul li ul {
@@ -73,7 +75,7 @@ h1 a { text-indent: -9999px; }
   position: absolute;
   top: 100%;
   left: 0;
-  margin-top: 5px; /* Adjust the margin to reduce the distance */
+  margin-top: 0px; /* Adjust the margin to reduce the distance */
 }
 
 #main-nav ul li ul li {
